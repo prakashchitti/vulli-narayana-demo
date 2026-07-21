@@ -117,7 +117,37 @@ button{
     cursor:pointer;
     transition:.3s;
 }
+.stats{
+display:flex;
+gap:35px;
+margin-top:45px;
+flex-wrap:wrap;
+justify-content:center;
+}
 
+.stats div{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:20px 30px;
+border-radius:20px;
+min-width:160px;
+transition:.35s;
+}
+
+.stats div:hover{
+transform:translateY(-8px);
+}
+
+.stats h2{
+font-size:34px;
+color:#38bdf8;
+margin-bottom:8px;
+}
+
+.stats span{
+font-size:15px;
+color:white;
+    }
 .primary{
     background:#2563eb;
     color:white;
@@ -180,11 +210,30 @@ button{
 
 <section class="hero">
 
-<h1>Shaping Bright Futures</h1>
+<h1>Your Success Begins Here</h1>
 
 <p>
-Admissions Open for 2026–27
+Tirupati's Trusted Tuition Academy for School, Intermediate & Competitive Exams
 </p>
+
+<div class="stats">
+
+<div>
+<h2>10+</h2>
+<span>Years of Excellence</span>
+</div>
+
+<div>
+<h2>5000+</h2>
+<span>Students Guided</span>
+</div>
+
+<div>
+<h2>95%</h2>
+<span>Success Rate</span>
+</div>
+
+</div>
 
 <div class="buttons">
 

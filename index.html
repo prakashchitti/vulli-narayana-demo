@@ -11,7 +11,130 @@
 
 <style>
 
-/* CSS Part 2 starts here */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1020;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 8%;
+    backdrop-filter:blur(14px);
+    background:rgba(255,255,255,.08);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h2{
+    font-size:22px;
+    font-weight:700;
+}
+
+.logo p{
+    font-size:13px;
+    color:#d1d5db;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav ul li{
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav ul li:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+    color:#e5e7eb;
+}
+
+.buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+button{
+    border:none;
+    padding:16px 34px;
+    border-radius:50px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    transform:translateY(-4px);
+}
+
+.secondary{
+    background:white;
+    color:#111827;
+}
+
+.secondary:hover{
+    transform:translateY(-4px);
+}
 
 </style>
 
